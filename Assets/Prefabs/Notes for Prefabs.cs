@@ -1,0 +1,1 @@
+// Use prefabs when want to reuse an object.

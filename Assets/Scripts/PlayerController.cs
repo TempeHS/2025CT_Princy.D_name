@@ -4,7 +4,7 @@ using UnityEngine;
 // CLOSE UNITY BEFORE COMMITING.
 public class PlayerController : MonoBehaviour
 {   
- // The Float variable is used for numbers. 
+ // The Float variable is used for a variable. 
     private float horizontal;
     private float speed = 8f;
     private float jumpingPower = 16f;
@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
         // I have no idea what this does, help.
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
+    
 
      private bool IsGrounded()
      {
