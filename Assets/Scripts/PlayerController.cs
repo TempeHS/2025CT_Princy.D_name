@@ -7,14 +7,18 @@ public class PlayerController : MonoBehaviour
  // The Float variable is used for a variable. 
     private float horizontal;
     private float speed = 8f;
-    private float jumpingPower = 16f;
+    private float jumpingPower = 10f;
     private bool isFacingRight = true;
 // The SerializeField references the RigidBody, the Groundcheck and the Groundlayer.
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
+    private int score;
+    public Score
+
     // Update is called once per frame
+
     void Update()
     {
         // Returns a value of 0, -1 or 1 depending on where the player is facing. 
@@ -38,12 +42,18 @@ public class PlayerController : MonoBehaviour
         // I have no idea what this does, help.
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
-    
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("PickUp"))
+        {
+            other.gameObject.SetActive(false);
+        }
+    }
 
      private bool IsGrounded()
-     {
+    {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-     }
+    }
 
 
     private void Flip()
