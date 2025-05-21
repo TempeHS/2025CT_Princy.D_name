@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 // CLOSE UNITY BEFORE COMMITING.
 public class PlayerController : MonoBehaviour
 {   
@@ -9,16 +10,20 @@ public class PlayerController : MonoBehaviour
     private float speed = 8f;
     private float jumpingPower = 10f;
     private bool isFacingRight = true;
+    private int count;
+    public TextMeshProUGUI countText;
+
 // The SerializeField references the RigidBody, the Groundcheck and the Groundlayer.
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
-    private int score;
-    public Score
-
     // Update is called once per frame
-
+    void Start()
+    {
+        count = 0;
+        SetCountText();
+    }
     void Update()
     {
         // Returns a value of 0, -1 or 1 depending on where the player is facing. 
@@ -47,10 +52,16 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
+            count = count + 1;
+            SetCountText();
         }
     }
+    void SetCountText()
+    {
+        countText.text = "Count: " + count.ToString();
+    }
 
-     private bool IsGrounded()
+    private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
