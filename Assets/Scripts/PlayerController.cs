@@ -32,24 +32,36 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        if (isDashing)
+        {
+            return;
+        }
         // Returns a value of 0, -1 or 1 depending on where the player is facing. 
-        horizontal = Input.GetAxisRaw("Horizontal");
+            horizontal = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        {
+            StartCoroutine(Dash());
+        }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-        }
+            {
+                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            }
 
         Flip();
     }
 
     private void FixedUpdate()
     {
+        if (isDashing)
+        {
+            return;
+        }
         // I have no idea what this does, help.
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
@@ -61,7 +73,12 @@ public class PlayerController : MonoBehaviour
             count = count + 1;
             SetCountText();
         }
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(other.gameObject);
+        }
     }
+
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
@@ -89,7 +106,7 @@ public class PlayerController : MonoBehaviour
         isDashing = true;
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
-        rb.velocity = new Velocity2(transform.localScale.x * dashingPower, 0f);
+        rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
         tr.emitting = true;
         yield return new WaitForSeconds(dashingTime);
         tr.emitting = false;
