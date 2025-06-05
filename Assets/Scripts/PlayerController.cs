@@ -23,6 +23,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private TrailRenderer tr;
+    AudioManager audioManager;
+// Private Void Awake allows me to access it and other components.
+    private void Awake() 
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     // Update is called once per frame
     void Start()
@@ -74,8 +80,7 @@ public class PlayerController : MonoBehaviour
             SetCountText();
         }
         if (other.gameObject.CompareTag("Enemy"))
-        {
-            Destroy(other.gameObject);
+        {            Destroy(other.gameObject);
         }
     }
 
@@ -108,6 +113,7 @@ public class PlayerController : MonoBehaviour
         rb.gravityScale = 0f;
         rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
         tr.emitting = true;
+        audioManager.PlaySFX(audioManager.dash);
         yield return new WaitForSeconds(dashingTime);
         tr.emitting = false;
         rb.gravityScale = originalGravity;
