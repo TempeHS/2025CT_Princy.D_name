@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     private float dashingPower = 24f;
     private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
+    public int maxHealth = 4;
+    public int currentHealth;
 
     // The SerializeField references the RigidBody, the Groundcheck and the Groundlayer.
     [SerializeField] private Rigidbody2D rb;
@@ -35,6 +37,8 @@ public class PlayerController : MonoBehaviour
     {
         count = 0;
         SetCountText();
+        currentHealth = maxHealth;
+        
     }
     void Update()
     {
@@ -44,11 +48,15 @@ public class PlayerController : MonoBehaviour
         }
         // Returns a value of 0, -1 or 1 depending on where the player is facing. 
             horizontal = Input.GetAxisRaw("Horizontal");
+        if (Input.GetButtonDown("Jump")) // DELETE THIS.
+            {
+            TakeDamage(1);
+            }
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-        }
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            }
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
             StartCoroutine(Dash());
@@ -89,6 +97,11 @@ public class PlayerController : MonoBehaviour
         countText.text = "Count: " + count.ToString();
     }
 
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+    }
+
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
@@ -114,6 +127,7 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
         tr.emitting = true;
         audioManager.PlaySFX(audioManager.dash);
+        // Make sure to edit the audio later.
         yield return new WaitForSeconds(dashingTime);
         tr.emitting = false;
         rb.gravityScale = originalGravity;
