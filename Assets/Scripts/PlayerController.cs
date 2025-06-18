@@ -52,6 +52,10 @@ public class PlayerController : MonoBehaviour
             {
             TakeDamage(1);
             }
+        if (currentHealth == 0)
+        {
+            Destroy(gameObject);
+        }
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
             {
@@ -88,7 +92,8 @@ public class PlayerController : MonoBehaviour
             SetCountText();
         }
         if (other.gameObject.CompareTag("Enemy"))
-        {            Destroy(other.gameObject);
+        {           
+            Destroy(other.gameObject);
         }
     }
 
