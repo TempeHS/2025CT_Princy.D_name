@@ -48,27 +48,30 @@ public class PlayerController : MonoBehaviour
         }
         // Returns a value of 0, -1 or 1 depending on where the player is facing. 
             horizontal = Input.GetAxisRaw("Horizontal");
+/*
         if (Input.GetButtonDown("Jump")) // DELETE THIS.
-            {
+        {
             TakeDamage(1);
-            }
+        }
+*/
         if (currentHealth == 0)
         {
             Destroy(gameObject);
         }
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (Input.GetButtonDown("Jump") && IsGrounded()) // Jump Function
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             }
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash) // Dash Function
         {
-            StartCoroutine(Dash());
+            StartCoroutine(Dash()); // Starts the function at the bottom of the code
         }
 
-        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f) // Jump function.
             {
-                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f); 
             }
 
         Flip();
