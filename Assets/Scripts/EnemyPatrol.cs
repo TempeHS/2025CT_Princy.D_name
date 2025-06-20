@@ -9,16 +9,18 @@ public class EnemyPatrol : MonoBehaviour
     private Rigidbody2D rb; // Referencing RigidBody2D. Private will mean that it cannot be edited. 
     private Transform currentPoint;
     public float speed;
+    public int damage;
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         currentPoint = PointB.transform; // The current point is set as PointB.
-
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         Vector2 point = currentPoint.position - transform.position; // Gives a direction that the enemy should go towards. Will be current point.
         if (currentPoint == PointB.transform) // If the current point is B (WHICH IT IS.)
         {

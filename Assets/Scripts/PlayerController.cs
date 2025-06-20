@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     private float dashingCooldown = 1f;
     public int maxHealth = 4;
     public int currentHealth;
+    public int damage;
+
 
     // The SerializeField references the RigidBody, the Groundcheck and the Groundlayer.
     [SerializeField] private Rigidbody2D rb;
@@ -48,7 +50,7 @@ public class PlayerController : MonoBehaviour
         }
         // Returns a value of 0, -1 or 1 depending on where the player is facing. 
             horizontal = Input.GetAxisRaw("Horizontal");
-/*
+    /*
         if (Input.GetButtonDown("Jump")) // DELETE THIS.
         {
             TakeDamage(1);
@@ -96,7 +98,7 @@ public class PlayerController : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Enemy"))
         {           
-            Destroy(other.gameObject);
+            print("Success");
         }
     }
 
@@ -105,7 +107,7 @@ public class PlayerController : MonoBehaviour
         countText.text = "Count: " + count.ToString();
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
     }
