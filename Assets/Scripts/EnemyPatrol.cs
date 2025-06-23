@@ -9,8 +9,6 @@ public class EnemyPatrol : MonoBehaviour
     private Rigidbody2D rb; // Referencing RigidBody2D. Private will mean that it cannot be edited. 
     private Transform currentPoint;
     public float speed;
-    public int damage;
-    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();

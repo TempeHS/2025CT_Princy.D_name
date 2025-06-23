@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     public int maxHealth = 4;
     public int currentHealth;
     public int damage;
+    public HealthBar healthBar;
 
 
     // The SerializeField references the RigidBody, the Groundcheck and the Groundlayer.
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
         count = 0;
         SetCountText();
         currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
         
     }
     void Update()
@@ -110,6 +112,7 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
     }
 
     private bool IsGrounded()
