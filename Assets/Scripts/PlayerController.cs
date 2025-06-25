@@ -8,13 +8,13 @@ public class PlayerController : MonoBehaviour
     // The Float variable is used for a variable. 
     private float horizontal;
     private float speed = 8f;
-    private float jumpingPower = 18f;
+    private float jumpingPower = 13f;
     private bool isFacingRight = true;
     private int count;
     public TextMeshProUGUI countText;
     private bool canDash = true;
     private bool isDashing;
-    private float dashingPower = 24f;
+    private float dashingPower = 13f;
     private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
     public int maxHealth = 4;
