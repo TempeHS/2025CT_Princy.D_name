@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     // The Float variable is used for a variable. 
     private float horizontal;
-    private float speed = 8f;
+    private float speed = 7f;
     private float jumpingPower = 13f;
     private bool isFacingRight = true;
     private int count;
@@ -22,12 +22,23 @@ public class PlayerController : MonoBehaviour
     public int damage;
     public HealthBar healthBar;
 
+    private bool isWallSliding;
+    private float wallSlidingSpeed = 2f;
+    private bool isWallJumping;
+    private float wallJumpingDirection;
+    private float wallJumpingTime = 0.2f;
+    private float wallJumpingCounter;
+    private float wallJumpingDuration = 0.4f;
+    private Vector2 wallJumpingPower = new Vector2(8f, 16f);
+
 
     // The SerializeField references the RigidBody, the Groundcheck and the Groundlayer.
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private TrailRenderer tr;
+    [SerializeField] private Transform WallCheck;
+    [SerializeField] private LayerMask WallLayer;
     AudioManager audioManager;
 // Private Void Awake allows me to access it and other components.
     private void Awake() 
@@ -51,22 +62,22 @@ public class PlayerController : MonoBehaviour
             return;
         }
         // Returns a value of 0, -1 or 1 depending on where the player is facing. 
-            horizontal = Input.GetAxisRaw("Horizontal");
-    /*
-        if (Input.GetButtonDown("Jump")) // DELETE THIS.
-        {
-            TakeDamage(1);
-        }
-*/
+        horizontal = Input.GetAxisRaw("Horizontal");
+        /*
+            if (Input.GetButtonDown("Jump")) // DELETE THIS.
+            {
+                TakeDamage(1);
+            }
+    */
         if (currentHealth == 0)
         {
             Destroy(gameObject);
         }
 
         if (Input.GetButtonDown("Jump") && IsGrounded()) // Jump Function
-            {
-                rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-            }
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+        }
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash) // Dash Function
         {
@@ -74,11 +85,12 @@ public class PlayerController : MonoBehaviour
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f) // Jump function.
-            {
-                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f); 
-            }
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        }
 
         Flip();
+        WallSlide();
     }
 
     private void FixedUpdate()
@@ -120,6 +132,23 @@ public class PlayerController : MonoBehaviour
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
+    private bool IsWalled()
+    {
+        return Physics2D.OverlapCircle(WallCheck.position, 0.2f, WallLayer);
+    }
+
+    private void WallSlide()
+    {
+        if (IsWalled() && !IsGrounded() && horizontal != 0f)
+        {
+            isWallSliding = true;
+            rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
+        }
+        else
+        {
+            isWallSliding = false;
+        }
+    }
 
     private void Flip()
     {
