@@ -1212,89 +1212,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &626270708 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2485001396467122808, guid: 77ff38ae3827a85408c160d9c369d5db, type: 3}
-  m_PrefabInstance: {fileID: 767471746}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &626270709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 626270708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b085a040b95b46942a4b30d414ec9a07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 2
-  playerHealth: {fileID: 1862813185}
---- !u!1001 &767471746
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2485001396467122808, guid: 77ff38ae3827a85408c160d9c369d5db, type: 3}
-      propertyPath: m_Name
-      value: TestEnemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 8633365861393354389, guid: 77ff38ae3827a85408c160d9c369d5db, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.89437765
-      objectReference: {fileID: 0}
-    - target: {fileID: 8633365861393354389, guid: 77ff38ae3827a85408c160d9c369d5db, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 8633365861393354389, guid: 77ff38ae3827a85408c160d9c369d5db, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.74
-      objectReference: {fileID: 0}
-    - target: {fileID: 8633365861393354389, guid: 77ff38ae3827a85408c160d9c369d5db, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8633365861393354389, guid: 77ff38ae3827a85408c160d9c369d5db, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8633365861393354389, guid: 77ff38ae3827a85408c160d9c369d5db, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8633365861393354389, guid: 77ff38ae3827a85408c160d9c369d5db, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8633365861393354389, guid: 77ff38ae3827a85408c160d9c369d5db, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8633365861393354389, guid: 77ff38ae3827a85408c160d9c369d5db, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8633365861393354389, guid: 77ff38ae3827a85408c160d9c369d5db, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8633365861393354389, guid: 77ff38ae3827a85408c160d9c369d5db, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2485001396467122808, guid: 77ff38ae3827a85408c160d9c369d5db, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 626270709}
-  m_SourcePrefab: {fileID: 100100000, guid: 77ff38ae3827a85408c160d9c369d5db, type: 3}
 --- !u!1 &800374222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,6 +1406,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c5c91a64aa9edf4e9e32ea45cc11972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
+  playerHealth: {fileID: 1862813185}
 --- !u!1 &885420553 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9061939801293485926, guid: 460d0c4101917934491b7d4f6c6646fd, type: 3}
@@ -1741,6 +1660,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c5c91a64aa9edf4e9e32ea45cc11972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 4
+  playerHealth: {fileID: 1862813185}
 --- !u!1001 &1044819673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2821,7 +2742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1055297649304067852, guid: 7ea9c1aeb0efabb4a9913746fbd7456f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 70.12
+      value: 69.5
       objectReference: {fileID: 0}
     - target: {fileID: 1055297649304067852, guid: 7ea9c1aeb0efabb4a9913746fbd7456f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3147,9 +3068,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 5679755179474456259, guid: 07762e598eafccc4ba12f8e39c08dbd6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7087930369496443625, guid: 07762e598eafccc4ba12f8e39c08dbd6, type: 3}
       propertyPath: m_Name
       value: Spike Trap (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087930369496443625, guid: 07762e598eafccc4ba12f8e39c08dbd6, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3529,9 +3458,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 5679755179474456259, guid: 07762e598eafccc4ba12f8e39c08dbd6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7087930369496443625, guid: 07762e598eafccc4ba12f8e39c08dbd6, type: 3}
       propertyPath: m_Name
       value: Spike Trap
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087930369496443625, guid: 07762e598eafccc4ba12f8e39c08dbd6, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4246,7 +4183,6 @@ SceneRoots:
   - {fileID: 937583575}
   - {fileID: 4154497984427754585}
   - {fileID: 2249827712569154734}
-  - {fileID: 767471746}
   - {fileID: 368607550}
   - {fileID: 967521072}
   - {fileID: 240566892}

@@ -89,7 +89,12 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
-        Flip();
+
+        WallJump();
+        if  (!isWallJumping)
+        {
+            Flip();
+        }
         WallSlide();
     }
 
@@ -99,8 +104,12 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
-        // I have no idea what this does, help.
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        if (!isWallJumping)
+        {
+            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        }
+
+    
     }
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -136,6 +145,43 @@ public class PlayerController : MonoBehaviour
     {
         return Physics2D.OverlapCircle(WallCheck.position, 0.2f, WallLayer);
     }
+
+    private void WallJump()
+    {
+        if (isWallSliding)
+        {
+            isWallJumping = false;
+            wallJumpingDirection = -transform.localScale.x;
+            wallJumpingCounter = wallJumpingTime;
+
+            CancelInvoke(nameof(StopWallJumping));
+        }
+        else 
+        {
+            wallJumpingCounter -= Time.deltaTime;
+        }
+        if (Input.GetButtonDown("Jump") && wallJumpingCounter > 0f)
+        {
+            isWallJumping = true;
+            rb.velocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y);
+            wallJumpingCounter = 0f;
+
+            if (transform.localScale.x != wallJumpingDirection)
+            {
+                isFacingRight = !isFacingRight;
+                Vector3 localScale = transform.localScale;
+                localScale.x *= -1f;
+                transform.localScale = localScale;
+            }
+            Invoke(nameof(StopWallJumping), wallJumpingDuration);
+        }
+    }
+
+    private void StopWallJumping()
+    {
+        isWallJumping = false;
+    }
+
 
     private void WallSlide()
     {

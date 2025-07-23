@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Hazards : MonoBehaviour
 {
-    void OnCollisionEnter2D(Collision2D Collision)
+    public int damage;
+    public PlayerController playerHealth;
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (Collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.tag == "Player")
         {
-            Destroy(Collision.gameObject);
+            playerHealth.TakeDamage(damage);
         }
     }
 }
