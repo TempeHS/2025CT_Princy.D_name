@@ -145,7 +145,6 @@ public class PlayerController : MonoBehaviour
     {
         return Physics2D.OverlapCircle(WallCheck.position, 0.2f, WallLayer);
     }
-
     private void WallJump()
     {
         if (isWallSliding)
@@ -156,7 +155,7 @@ public class PlayerController : MonoBehaviour
 
             CancelInvoke(nameof(StopWallJumping));
         }
-        else 
+        else
         {
             wallJumpingCounter -= Time.deltaTime;
         }
