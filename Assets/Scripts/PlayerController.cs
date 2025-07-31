@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
     private float wallJumpingCounter;
     private float wallJumpingDuration = 0.4f;
     private Vector2 wallJumpingPower = new Vector2(8f, 16f);
+    private bool isDead;
+    public GameManagerScript GameManager;
 
 
     // The SerializeField references the RigidBody, the Groundcheck and the Groundlayer.
@@ -69,9 +71,11 @@ public class PlayerController : MonoBehaviour
                 TakeDamage(1);
             }
     */
-        if (currentHealth == 0)
+        if (currentHealth <= 0 & !isDead)
         {
+            isDead = true;
             Destroy(gameObject);
+            GameManager.GameOver();
         }
 
         if (Input.GetButtonDown("Jump") && IsGrounded()) // Jump Function
