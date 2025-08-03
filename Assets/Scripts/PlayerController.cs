@@ -131,7 +131,7 @@ public class PlayerController : MonoBehaviour
 
     void SetCountText()
     {
-        countText.text = "Count: " + count.ToString();
+        countText.text = "Coins: " + count.ToString();
     }
 
     public void TakeDamage(int damage)

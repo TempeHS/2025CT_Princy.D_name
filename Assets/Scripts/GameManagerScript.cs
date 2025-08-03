@@ -8,7 +8,7 @@ public class GameManagerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        gameOverUI.SetActive(false);
     }
 
     // Update is called once per frame
