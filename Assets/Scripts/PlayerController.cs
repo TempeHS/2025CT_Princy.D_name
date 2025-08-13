@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public int currentHealth;
     public int damage;
     public HealthBar healthBar;
+    public GameObject WinScreen;
 
     private bool isWallSliding;
     private float wallSlidingSpeed = 2f;
@@ -31,7 +32,7 @@ public class PlayerController : MonoBehaviour
     private float wallJumpingDuration = 0.4f;
     private Vector2 wallJumpingPower = new Vector2(8f, 16f);
     private bool isDead;
-    public GameManagerScript GameManager;
+    public GameManagerScript GameManager;   
 
 
     // The SerializeField references the RigidBody, the Groundcheck and the Groundlayer.
@@ -117,12 +118,17 @@ public class PlayerController : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("PickUp"))
+        if (other.gameObject.CompareTag("Win"))
         {
-            other.gameObject.SetActive(false);
-            count = count + 1;
-            SetCountText();
+            GameManager.Win();
+            Debug.Log("Check");
         }
+        if (other.gameObject.CompareTag("PickUp"))
+            {
+                other.gameObject.SetActive(false);
+                count = count + 1;
+                SetCountText();
+            }
         if (other.gameObject.CompareTag("Enemy"))
         {           
             print("Success");

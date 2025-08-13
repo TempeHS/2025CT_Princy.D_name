@@ -8,6 +8,7 @@ TagManager:
   - PickUp
   - Enemy
   - Audio
+  - Win
   layers:
   - Default
   - TransparentFX
