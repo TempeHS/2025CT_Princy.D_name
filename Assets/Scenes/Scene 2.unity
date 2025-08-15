@@ -1099,11 +1099,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1311329860}
+  maxHealth: 4
+  currentHealth: 0
+  damage: 0
+  healthBar: {fileID: 0}
+  WinScreen: {fileID: 0}
+  GameManager: {fileID: 0}
   rb: {fileID: 1862813184}
   groundCheck: {fileID: 1148436688}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  tr: {fileID: 1862813190}
+  WallCheck: {fileID: 0}
+  WallLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1862813186
 SpriteRenderer:
   m_ObjectHideFlags: 0

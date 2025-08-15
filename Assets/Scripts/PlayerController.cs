@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
         SetCountText();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
-        
+                WinScreen.SetActive(false);
     }
     void Update()
     {
@@ -118,11 +118,6 @@ public class PlayerController : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Win"))
-        {
-            GameManager.Win();
-            Debug.Log("Check");
-        }
         if (other.gameObject.CompareTag("PickUp"))
             {
                 other.gameObject.SetActive(false);
@@ -150,6 +145,7 @@ public class PlayerController : MonoBehaviour
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
+
 
     private bool IsWalled()
     {

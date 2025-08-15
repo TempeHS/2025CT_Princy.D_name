@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Audio
   - Win
+  - Success
   layers:
   - Default
   - TransparentFX
