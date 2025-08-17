@@ -20,9 +20,14 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadSceneAsync(0);
     }
 
-        public void  ContinueGame()
+    public void ContinueGame()
     {
         SceneManager.LoadSceneAsync(2);
+    }
+
+    public void NextLevel()
+    {
+        SceneManager.LoadSceneAsync(3);
     }
 
 }

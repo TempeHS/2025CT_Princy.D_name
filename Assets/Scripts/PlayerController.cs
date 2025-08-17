@@ -56,7 +56,8 @@ public class PlayerController : MonoBehaviour
         SetCountText();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
-                WinScreen.SetActive(false);
+        WinScreen.SetActive(false);
+        Time.timeScale = 1f;
     }
     void Update()
     {

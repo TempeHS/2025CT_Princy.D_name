@@ -8,9 +8,10 @@ public class Goal : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-        WinScreen.SetActive(true);
+            WinScreen.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 }
