@@ -10,6 +10,7 @@ TagManager:
   - Audio
   - Win
   - Success
+  - Damage
   layers:
   - Default
   - TransparentFX

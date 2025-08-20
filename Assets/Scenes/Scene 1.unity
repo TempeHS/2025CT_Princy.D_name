@@ -5830,6 +5830,10 @@ PrefabInstance:
       value: ProjectileEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 517808313034466704, guid: cdbefcade8c5484458107d8e91463fb2, type: 3}
+      propertyPath: damage
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 517808313034466704, guid: cdbefcade8c5484458107d8e91463fb2, type: 3}
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 1862813185}

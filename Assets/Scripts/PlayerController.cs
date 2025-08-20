@@ -77,6 +77,7 @@ public class PlayerController : MonoBehaviour
         {
             isDead = true;
             Destroy(gameObject);
+            Time.timeScale = 0f;
             GameManager.GameOver();
         }
 
@@ -120,13 +121,13 @@ public class PlayerController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("PickUp"))
-            {
-                other.gameObject.SetActive(false);
-                count = count + 1;
-                SetCountText();
-            }
+        {
+            other.gameObject.SetActive(false);
+            count = count + 1;
+            SetCountText();
+        }
         if (other.gameObject.CompareTag("Enemy"))
-        {           
+        {
             print("Success");
         }
     }
