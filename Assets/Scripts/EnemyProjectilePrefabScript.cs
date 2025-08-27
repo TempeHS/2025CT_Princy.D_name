@@ -44,9 +44,10 @@ public class EnemyProjectilePrefabScript : MonoBehaviour
     }
             void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.gameObject.CompareTag("Player"))
-            {
+        if (other.gameObject.CompareTag("Player"))
+        {
                 Destroy(gameObject);
+                playerHealth.TakeDamage(damage);
             }
         }
 }
