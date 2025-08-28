@@ -96,6 +96,10 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
+        if (input.GetButtonDown("KeyCode.F"))
+        {
+            Attack();
+        }
 
         WallJump();
         if  (!isWallJumping)
@@ -105,6 +109,15 @@ public class PlayerController : MonoBehaviour
         WallSlide();
     }
 
+    // ----------------- END OF UPDATE SECTION --------------------------
+
+    void Attack()
+    {
+        // Plan: Playing attack animation (learn animator)
+        // Detect enemies in range
+        // Inflict damage on them
+
+    }
     private void FixedUpdate()
     {
         if (isDashing)
@@ -116,7 +129,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
         }
 
-    
+
     }
     void OnTriggerEnter2D(Collider2D other)
     {
