@@ -1011,7 +1011,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6ae06ebf5b5260d40bf56f8eca33d516, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3733c4d341aad5b4db749859360e7f70, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2290,7 +2290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 498353650}
   SFXSource: {fileID: 78375790}
-  background: {fileID: 0}
+  background: {fileID: 8300000, guid: 3733c4d341aad5b4db749859360e7f70, type: 3}
   death: {fileID: 0}
   dash: {fileID: 8300000, guid: 62b48b2a5910e434ca453611acda7340, type: 3}
 --- !u!4 &937583575
@@ -6507,6 +6507,10 @@ PrefabInstance:
     - target: {fileID: 802883409862742311, guid: 806b1b920f6314b4d945f09ed11af22e, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3552106960259369371, guid: 806b1b920f6314b4d945f09ed11af22e, type: 3}
+      propertyPath: speed
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3552106960259369371, guid: 806b1b920f6314b4d945f09ed11af22e, type: 3}
       propertyPath: PointA
