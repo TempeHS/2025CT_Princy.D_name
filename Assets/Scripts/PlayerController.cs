@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private TrailRenderer tr;
     [SerializeField] private Transform WallCheck;
     [SerializeField] private LayerMask WallLayer;
+    [SerializeField] private Animator _PlayerAnimator;
     AudioManager audioManager;
 // Private Void Awake allows me to access it and other components.
     private void Awake() 
@@ -195,6 +196,8 @@ public class PlayerController : MonoBehaviour
     }
 
 
+    
+
     private void WallSlide()
     {
         if (IsWalled() && !IsGrounded() && horizontal != 0f)
@@ -216,6 +219,15 @@ public class PlayerController : MonoBehaviour
             Vector3 localScale = transform.localScale;
             localScale.x *= -1f;
             transform.localScale = localScale;
+            // Animator Script
+            /* if (input != 0)
+            {
+                _PlayerAnimator.SetBool("isRunning", true);
+            }
+            else
+            {
+                _PlayerAnimator.SetBool("isRunning", false);
+            } */
         }
     }
     private IEnumerator Dash()

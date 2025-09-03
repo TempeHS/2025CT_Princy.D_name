@@ -1245,7 +1245,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.965, y: -3.694, z: -10}
+  m_LocalPosition: {x: -9.965, y: -3.6172, z: -10}
   m_LocalScale: {x: 1.1625, y: 0.87281257, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4090,7 +4090,7 @@ Transform:
   m_GameObject: {fileID: 1381536554}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.965, y: -3.694, z: -10}
+  m_LocalPosition: {x: -9.965, y: -3.6172, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5273,6 +5273,7 @@ GameObject:
   - component: {fileID: 1862813190}
   - component: {fileID: 1862813184}
   - component: {fileID: 1862813189}
+  - component: {fileID: 1862813191}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5377,12 +5378,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5177388603050735206, guid: 8884154dfe85442a3a3578be807dbcdf, type: 3}
-  m_Color: {r: 0, g: 0.29986405, b: 1, a: 1}
+  m_Sprite: {fileID: -951466703, guid: 41ea72c588b7924488fb4e0a1b1c2337, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.8, y: 0.9964999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5397,7 +5398,7 @@ Transform:
   m_GameObject: {fileID: 1862813182}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.965, y: -3.694, z: 0}
+  m_LocalPosition: {x: -9.965, y: -3.6172, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5439,36 +5440,49 @@ PolygonCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.25, y: 0.25, z: 0.25, w: 0.25}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 0.8, y: 1.15}
+    newSize: {x: 0.8, y: 0.9964999}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.4921875, y: 0.28515625}
-      - {x: 0.46875, y: 0.359375}
-      - {x: 0.421875, y: 0.421875}
-      - {x: 0.359375, y: 0.46875}
-      - {x: 0.28515625, y: 0.4921875}
-      - {x: -0.28515625, y: 0.4921875}
+    - - {x: 0.3100376, y: -0.10626459}
+      - {x: 0.35584354, y: -0.05425024}
+      - {x: 0.42180824, y: -0.05337262}
+      - {x: 0.41193485, y: -0.017086029}
+      - {x: 0.42004967, y: 0.04595518}
+      - {x: 0.42533207, y: 0.20078897}
+      - {x: 0.4170437, y: 0.34226584}
+      - {x: 0.41464615, y: 0.36238074}
+      - {x: 0.36777115, y: 0.3707769}
+      - {x: 0.365386, y: 0.49580193}
+      - {x: 0.28215027, y: 0.5162337}
+      - {x: 0.0016288757, y: 0.5162337}
+      - {x: -0.27313328, y: 0.5102222}
       - {x: -0.359375, y: 0.46875}
       - {x: -0.421875, y: 0.421875}
-      - {x: -0.46875, y: 0.359375}
-      - {x: -0.4921875, y: 0.28515625}
-      - {x: -0.4921875, y: -0.28515625}
-      - {x: -0.46875, y: -0.359375}
-      - {x: -0.421875, y: -0.421875}
-      - {x: -0.359375, y: -0.46875}
-      - {x: -0.28515625, y: -0.4921875}
+      - {x: -0.41164017, y: 0.3473518}
+      - {x: -0.41103172, y: 0.25810432}
+      - {x: -0.36293888, y: 0.07300711}
+      - {x: -0.36895084, y: -0.008625269}
+      - {x: -0.32814693, y: -0.010543585}
+      - {x: -0.217206, y: -0.013767719}
+      - {x: -0.21554184, y: -0.045856237}
+      - {x: -0.11371994, y: -0.056484938}
+      - {x: -0.100286484, y: -0.30055523}
+      - {x: -0.011872292, y: -0.36839223}
+      - {x: -0.019101143, y: -0.39782858}
+      - {x: -0.010704994, y: -0.4356866}
+      - {x: 0.03946781, y: -0.51322794}
       - {x: 0.28515625, y: -0.4921875}
-      - {x: 0.359375, y: -0.46875}
-      - {x: 0.421875, y: -0.421875}
-      - {x: 0.46875, y: -0.359375}
-      - {x: 0.4921875, y: -0.28515625}
+      - {x: 0.31428814, y: -0.49580193}
+      - {x: 0.31667328, y: -0.47597885}
+      - {x: 0.30944443, y: -0.40446138}
+      - {x: 0.30883503, y: -0.3001852}
   m_UseDelaunayMesh: 0
 --- !u!96 &1862813190
 TrailRenderer:
@@ -5583,6 +5597,27 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 0
   m_ApplyActiveColorSpace: 0
+--- !u!95 &1862813191
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862813182}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a71f9931634c565458b9a860e04c40cd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1868762866
 PrefabInstance:
   m_ObjectHideFlags: 0
