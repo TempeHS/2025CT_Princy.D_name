@@ -220,14 +220,6 @@ public class PlayerController : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
             // Animator Script
-            /* if (input != 0)
-            {
-                _PlayerAnimator.SetBool("isRunning", true);
-            }
-            else
-            {
-                _PlayerAnimator.SetBool("isRunning", false);
-            } */
         }
     }
     private IEnumerator Dash()
