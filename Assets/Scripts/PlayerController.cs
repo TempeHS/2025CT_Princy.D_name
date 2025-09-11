@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private TrailRenderer tr;
     [SerializeField] private Transform WallCheck;
     [SerializeField] private LayerMask WallLayer;
-    [SerializeField] private Animator _PlayerAnimator;
+    [SerializeField] private Animator PlayerAnimator;
     AudioManager audioManager;
 // Private Void Awake allows me to access it and other components.
     private void Awake() 
