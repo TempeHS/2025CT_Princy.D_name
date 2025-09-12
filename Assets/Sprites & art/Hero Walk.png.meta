@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4b590ebfc26df184b89f6443d4c5a0fa
+guid: 7c4926ec80f3d994fb11154e49da5984
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HeroWalk_0
+      name: Hero Walk_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 320
-        height: 320
+        x: 22
+        y: 90
+        width: 16
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c462710a72fad44bb9c1820cf922208
-      internalID: -151415133
+      spriteID: a57fa9e981353f44398aab0e41bfb6ad
+      internalID: 553756873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeroWalk_1
+      name: Hero Walk_1
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
-        width: 320
-        height: 320
+        x: 86
+        y: 90
+        width: 16
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82df0899a3dbd3e4ca2b2499c59c7144
-      internalID: 802241202
+      spriteID: fabff4e7fdc0af94ca00ce4e47dacc61
+      internalID: 882943956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeroWalk_2
+      name: Hero Walk_2
       rect:
         serializedVersion: 2
-        x: 640
-        y: 0
-        width: 320
-        height: 320
+        x: 22
+        y: 26
+        width: 16
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5bc0cf628388b341b8a2b6d9800efa4
-      internalID: 1685900449
+      spriteID: f84b6966bc73ee54e8eea56cbc35c6b6
+      internalID: -1367708827
       vertices: []
       indices: 
       edges: []
@@ -183,9 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      HeroWalk_0: -151415133
-      HeroWalk_1: 802241202
-      HeroWalk_2: 1685900449
+      Hero Walk_0: 553756873
+      Hero Walk_1: 882943956
+      Hero Walk_2: -1367708827
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
