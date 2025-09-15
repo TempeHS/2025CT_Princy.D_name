@@ -1473,7 +1473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 562646695}
   m_Layer: 0
-  m_Name: AP
+  m_Name: attackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1488,7 +1488,7 @@ Transform:
   m_GameObject: {fileID: 562646694}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.318, y: -0.052, z: 0}
+  m_LocalPosition: {x: 0.318, y: -0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3777,12 +3777,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 275288610}
     m_Modifications:
     - target: {fileID: 2248977289455914, guid: 806b1b920f6314b4d945f09ed11af22e, type: 3}
+      propertyPath: damage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248977289455914, guid: 806b1b920f6314b4d945f09ed11af22e, type: 3}
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 1862813185}
     - target: {fileID: 802883409862742311, guid: 806b1b920f6314b4d945f09ed11af22e, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 802883409862742311, guid: 806b1b920f6314b4d945f09ed11af22e, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1397867393916097149, guid: 806b1b920f6314b4d945f09ed11af22e, type: 3}
+      propertyPath: m_BodyType
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5719887124002376362, guid: 806b1b920f6314b4d945f09ed11af22e, type: 3}
       propertyPath: m_Color.b
@@ -3798,11 +3810,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7955902184245994504, guid: 806b1b920f6314b4d945f09ed11af22e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 145.44176
+      value: 29.97
       objectReference: {fileID: 0}
     - target: {fileID: 7955902184245994504, guid: 806b1b920f6314b4d945f09ed11af22e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.161829
+      value: -24.26
       objectReference: {fileID: 0}
     - target: {fileID: 7955902184245994504, guid: 806b1b920f6314b4d945f09ed11af22e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5973,11 +5985,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1862813191}
-  AP: {fileID: 0}
-  attackRange: 0.5
+  AP: {fileID: 562646695}
+  attackRange: 2.18
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
 --- !u!61 &1862813193
 BoxCollider2D:
   m_ObjectHideFlags: 0

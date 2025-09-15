@@ -6,10 +6,10 @@ public class PlayerCombat : MonoBehaviour
 {
 
     public Animator animator;
-    public Transform AP;
-    // AP is Attack Point 
-    public float attackRange = 0.5f;
+    public Transform attackPoint; // AP is Attack Point 
     public LayerMask enemyLayers; // LayerMasks are applied in order to define who the enemies are.
+    public float attackRange = 0.5f;
+    public int AttackDamage = 40;
 
     void Update()
     {
@@ -21,13 +21,19 @@ public class PlayerCombat : MonoBehaviour
 
     void Attack()
     {
-        Debug.Log("City");
         animator.SetTrigger("Attack");
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(AP.position, attackRange, enemyLayers); // Creates a circle from the AP and the attack range value, and returns what the circle interacted with.
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers); // Creates a circle from the AP and the attack range value, and returns what the circle interacted with.
         // -- DAMAGE -- 
-        foreach (Collider2D enemy in hitEnemies)
+        foreach(Collider2D enemy in hitEnemies)
         {
-            Debug.Log("We hit " + enemy.name);
+            enemy.GetComponent<Enemy>().TakeDamage(AttackDamage);
         }
+    }
+    
+    void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null)
+        return;
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange); // Draws a sphere in the editor around the AP and attack range? 
     }
 }
