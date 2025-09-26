@@ -11,6 +11,7 @@ TagManager:
   - Win
   - Success
   - Damage
+  - Health
   layers:
   - Default
   - TransparentFX

@@ -136,6 +136,12 @@ public class PlayerController : MonoBehaviour
         {
             print("Success");
         }
+        if (other.gameObject.CompareTag("Health"))
+        {
+            other.gameObject.SetActive(false);
+            currentHealth = currentHealth + 2;
+            healthBar.SetHealth(currentHealth);
+        }
     }
 
     void SetCountText()
