@@ -1,40 +1,29 @@
-# Project Title
-
-My game
-(Testing VSCODE Commit)
-
+# The Odyssey 
+it had a purpose
+    
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+'The Odyssey' (Also derived from the book of the same name) is a combat platformer encouraging emphasis on speed and collection. 
 
-## Getting Started
+## Features
 
-### Dependencies
+### :white_check_mark: Working Mechanics 
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+*
 
-### Installing
+### :dart: Goals 
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+While most features of my game do work, I do still find myself unsatisified by some features that I was not able to implement earlier. These goals include:
+* Implementing proper art assets into my game 
+* 
 
-### Executing program
+## :red_circle: Major/Minor issues during Development
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+Throughout my project, I ran into a variety of issues that would provide a challenge to me. While most of these issues are fairly minor, there are a few outliers that may need further evaluation at a later time. These issues include:
+* Flying enemies - While the enemy would use the prefab provided, it would later erase itself and not be able to generate another projectile, which gave me a wide plethora of console issues.
+* Implementing sprites - I had to completely avoid using some of my assets provided as animation sprites for the same character were of different sizes, showing the full sprite sheet png when the animation would show.
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
+### Authors
 
 Contributors names and contact info
 
@@ -49,7 +38,7 @@ ex. [@benpaddlejones](https://github.com/benpaddlejones)
 * 0.1
     * Initial Release
 
-## License
+### License
 
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
