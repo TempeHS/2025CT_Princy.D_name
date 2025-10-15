@@ -1,5 +1,4 @@
 # The Odyssey 
-it had a purpose
     
 ## Description
 
