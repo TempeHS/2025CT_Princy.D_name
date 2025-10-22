@@ -2,7 +2,7 @@
     
 ## Description
 
-'The Odyssey' (Also derived from the book of the same name) is a combat platformer encouraging emphasis on speed and collection. 
+'The Odyssey' (Also derived from the book of the same name) is a combat platformer encouraging emphasis on speed and collection. The game focuses on getting from one goal to another, while collecting coins along the way to spend on future levels. While on this adventure, or odyssey, the player will encounter enemies that try to stop them, or dangerous obstacles. 
 ## :video_game: Controls
 | Keybinds  | Actions |
 | ------------- | ------------- |
@@ -21,7 +21,7 @@
 
 While most features of my game do work, I do still find myself unsatisified by some features that I was not able to implement earlier. These goals include:
 * Implementing proper art assets into my game 
-* 
+* Expanding the game and adding more content. During development, I was quite slow and was not able to implement many of the features I wished to add. Features that could have been included would be things such as more varied enemies for the player to evade/attack, creative obstacles that would require players to take advantage and experiment with the mechanics, and score that would carry over to other levels, making collecting coins actually worth something valuable.
 
 ## :red_circle: Major/Minor issues during Development
 
@@ -53,4 +53,3 @@ This project is licensed under the [NAME HERE] License - see the LICENSE.md file
 Inspiration, code snippets, etc.
 * [Github md syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * [TempeHS Unity template](https://github.com/TempeHS/TempeHS_Unity_DevContainer)
-testing commit
