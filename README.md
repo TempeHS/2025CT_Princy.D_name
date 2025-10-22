@@ -1,6 +1,7 @@
 # The Odyssey 
-
-'The Odyssey' (Also derived from the book of the same name) is a combat platformer encouraging emphasis on speed and collection. The game focuses on getting from one goal to another, while collecting coins along the way to spend on future levels. While on this adventure, or odyssey, the player will encounter enemies that try to stop them, or dangerous obstacles. 
+The Odyssey is a combat platformer encouraging emphasis on speed and collection. The game focuses on getting from one goal to another, while collecting coins along the way to spend on future levels. While on this adventure, or odyssey, the player will encounter enemies that try to stop them, or dangerous obstacles. 
+## Story
+With my multimedia student, we came up with a basis for a story where the main character would live in a dystopian landscape where megacorporations take control of the Earth's resources, governing the world and taking the people's will for themselves. The main character is a female mercenary working to liberate the world from the corporation's gripping on the continents. The game title, 'The Odyssey' is inspired off the novel of the same name, and is given this name to simulate the same large and grand adventure that Odysseus had in the novel.
 ## Table of Contents <a name="my-custom-anchor-point"></a>
 - [Controls](#controls)
 
@@ -12,7 +13,7 @@
 
 - [Issues](#issues)
 
-- [Credits](#credits)
+- [Acknowledgements](#credits)
 ## :video_game: Controls <a name="controls"></a>
 | Keybinds  | Actions |
 | ------------- | ------------- |
@@ -22,7 +23,9 @@
 | A | Move Left |
 | D | Move Right |
 ## Features
-
+- Dashing, which is a central mechanic of the game and gives the player an option to flee the enemies instead of fighting
+- Jumping, which is another central mechanic for platforming.
+- The Odyssey had a purpose.
 ### :white_check_mark: Working Mechanics <a name="mechanics"></a>
 Most of the mechanics are quite basic, but aren't likely to malfunction and break during gameplay.
 
@@ -43,8 +46,9 @@ Throughout my project, I ran into a variety of issues that would provide a chall
 
 Contributors names and contact info
 
-ex. Mr Jones
-ex. [@benpaddlejones](https://github.com/benpaddlejones)
+- [Princy D](https://github.com/Princy-Dumais), who is me, and is the main developer of the game.
+- [Corin Barker](https://github.com/Cornbarker91), who created some of the art assets for the game.
+- Lisa Nguyen, who also provided some of the assets for the game.
 
 ## Version History
 
@@ -58,8 +62,7 @@ ex. [@benpaddlejones](https://github.com/benpaddlejones)
 
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
-## Acknowledgments
+## Acknowledgments <a name="credits"></a>
 
 Inspiration, code snippets, etc.
-* [Github md syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-* [TempeHS Unity template](https://github.com/TempeHS/TempeHS_Unity_DevContainer)
+- [Brackeys](https://github.com/Brackeys), the main developer who I followed tutorials for. 
