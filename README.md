@@ -8,6 +8,9 @@
 | ------------- | ------------- |
 | Space  | Jump  |
 | F | Attack  |
+| W | Move Forward |
+| A | Move Left |
+| D | Move Right |
 ## Features
 
 ### :white_check_mark: Working Mechanics 
