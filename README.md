@@ -3,12 +3,16 @@
 ## Description
 
 'The Odyssey' (Also derived from the book of the same name) is a combat platformer encouraging emphasis on speed and collection. 
-
+## :video_game: Controls
+| Keybinds  | Actions |
+| ------------- | ------------- |
+| Space  | Jump  |
+| F | Attack  |
 ## Features
 
 ### :white_check_mark: Working Mechanics 
 
-*
+
 
 ### :dart: Goals 
 
