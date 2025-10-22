@@ -25,7 +25,6 @@ With my multimedia student, we came up with a basis for a story where the main c
 ## Features
 - Dashing, which is a central mechanic of the game and gives the player an option to flee the enemies instead of fighting
 - Jumping, which is another central mechanic for platforming.
-- The Odyssey had a purpose.
 ### :white_check_mark: Working Mechanics <a name="mechanics"></a>
 Most of the mechanics are quite basic, but aren't likely to malfunction and break during gameplay.
 
