@@ -2,6 +2,7 @@
 
 'The Odyssey' (Also derived from the book of the same name) is a combat platformer encouraging emphasis on speed and collection. The game focuses on getting from one goal to another, while collecting coins along the way to spend on future levels. While on this adventure, or odyssey, the player will encounter enemies that try to stop them, or dangerous obstacles. 
 ## Table of Contents
+<a name="my-custom-anchor-point"></a>
 ## :video_game: Controls
 | Keybinds  | Actions |
 | ------------- | ------------- |
@@ -12,7 +13,7 @@
 | D | Move Right |
 ## Features
 
-### :white_check_mark: Working Mechanics 
+### :white_check_mark: Working Mechanics [A link to that custom anchor](#my-custom-anchor-point)
 Most of the mechanics are quite basic, but aren't likely to malfunction and break during gameplay.
 
 
