@@ -24,8 +24,9 @@ With my multimedia student, we came up with a basis for a story where the main c
 | D | Move Right |
 ## Features
 - Dashing, which is a central mechanic of the game and gives the player an option to flee the enemies instead of fighting
-- Jumping, which is another central mechanic for platforming.
+- [Jumping](https://www.youtube.com/watch?v=K1xZ-rycYY8), which is another central mechanic for platforming.
 - [Wall Sliding & Wall Hopping](https://www.youtube.com/watch?v=O6VX6Ro7EtA)
+- [Attacking](https://www.youtube.com/watch?v=sPiVz1k-fEs)
 ### :white_check_mark: Working Mechanics <a name="mechanics"></a>
 Most of the mechanics are quite basic, but aren't likely to malfunction and break during gameplay.
 
