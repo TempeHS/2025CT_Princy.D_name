@@ -31,6 +31,9 @@ With my multimedia student, we came up with a basis for a story where the main c
 Most of the mechanics are quite basic, but aren't likely to malfunction and break during gameplay.
 
 ## Developer Documentation
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](CombatCode.png)
+
+
 ### :dart: Goals <a name="goals"></a>
 
 While most features of my game do work, I do still find myself unsatisified by some features that I was not able to implement earlier. These goals include:
