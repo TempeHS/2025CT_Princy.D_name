@@ -1,15 +1,17 @@
 # The Odyssey 
 The Odyssey is a combat platformer encouraging emphasis on speed and collection. The game focuses on getting from one goal to another, while collecting coins along the way to spend on future levels. While on this adventure, or odyssey, the player will encounter enemies that try to stop them, or dangerous obstacles. 
+![A screenshot from the game.](GameScreenshot.png)
+A screenshot showing gameplay.
 ## Story
 With my multimedia student, we came up with a basis for a story where the main character would live in a dystopian landscape where megacorporations take control of the Earth's resources, governing the world and taking the people's will for themselves. The main character is a female mercenary working to liberate the world from the corporation's gripping on the continents. The game title, 'The Odyssey' is inspired off the novel of the same name, and is given this name to simulate the same large and grand adventure that Odysseus had in the novel.
 ## Table of Contents <a name="my-custom-anchor-point"></a>
 - [Controls](#controls)
 
-- [Features](#features) 
-
-- [Mechanics](#mechanics)
+- [Features and Mechanics](#features) 
 
 - [Goals](#goals)
+
+- [Developer Documentation](#DevDoc)
 
 - [Issues](#issues)
 
@@ -22,16 +24,18 @@ With my multimedia student, we came up with a basis for a story where the main c
 | W | Move Forward |
 | A | Move Left |
 | D | Move Right |
-## Features
+## :white_check_mark: Features and Working Mechanics <a name="features"></a>
 - Dashing, which is a central mechanic of the game and gives the player an option to flee the enemies instead of fighting
 - [Jumping](https://www.youtube.com/watch?v=K1xZ-rycYY8), which is another central mechanic for platforming.
 - [Wall Sliding & Wall Hopping](https://www.youtube.com/watch?v=O6VX6Ro7EtA)
 - [Attacking](https://www.youtube.com/watch?v=sPiVz1k-fEs)
-### :white_check_mark: Working Mechanics <a name="mechanics"></a>
-Most of the mechanics are quite basic, but aren't likely to malfunction and break during gameplay.
+- Collectables, which tally up a score.
+- A timer that encourages players to beat the game as fast as possible.
+- Movement system which rewards when players take advantage of it.
 
-## Developer Documentation
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](CombatCode.png)
+## Developer Documentation <a name="DevDoc"></a>
+![Screenshot of my code, showcasing the combat mechanics of this game.](CombatCode.PNG)
+Image of the combat mechanics of my game. Used from this [tutorial created by Brackeys,](https://www.youtube.com/watch?v=sPiVz1k-fEs) or look at the features and click on the hyperlink for attacking.
 
 
 ### :dart: Goals <a name="goals"></a>
