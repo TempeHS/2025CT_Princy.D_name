@@ -30,7 +30,7 @@ With my multimedia student, we came up with a basis for a story where the main c
 ### :white_check_mark: Working Mechanics <a name="mechanics"></a>
 Most of the mechanics are quite basic, but aren't likely to malfunction and break during gameplay.
 
-
+## Developer Documentation
 ### :dart: Goals <a name="goals"></a>
 
 While most features of my game do work, I do still find myself unsatisified by some features that I was not able to implement earlier. These goals include:
