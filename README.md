@@ -11,7 +11,7 @@ With my multimedia student, we came up with a basis for a story where the main c
 
 - [Goals](#goals)
 
-- [Developer Documentation](#DevDoc)
+- [Developer Documentation](#dev)
 
 - [Issues](#issues)
 
@@ -33,7 +33,7 @@ With my multimedia student, we came up with a basis for a story where the main c
 - A timer that encourages players to beat the game as fast as possible.
 - Movement system which rewards when players take advantage of it.
 
-## Developer Documentation <a name="DevDoc"></a>
+## Developer Documentation <a name="dev"></a>
 ![Screenshot of my code, showcasing the combat mechanics of this game.](CombatCode.PNG)
 Image of the combat mechanics of my game. Used from this [tutorial created by Brackeys,](https://www.youtube.com/watch?v=sPiVz1k-fEs) or look at the features and click on the hyperlink for attacking.
 
