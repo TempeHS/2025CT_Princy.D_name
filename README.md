@@ -59,7 +59,8 @@ While most features of my game do work, I do still find myself unsatisified by s
   - Stand still, which can be seen more prominently with the red square 'enemy' at the beginning of the game. 
 
 ### Successful Mechanics 
-
+![Movement script.](MovementScript.PNG)
+Image of the movement mechanics in the game. 
 
 
 ### :red_circle: Major/Minor issues during Development <a name="issues"></a>
