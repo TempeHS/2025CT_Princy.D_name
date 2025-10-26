@@ -50,8 +50,7 @@ With my multimedia student, we came up with a basis for a story where the main c
 Image of the combat mechanics of my game. Used from this [tutorial created by Brackeys,](https://www.youtube.com/watch?v=sPiVz1k-fEs) or look at the features and click on the hyperlink for attacking.
 
 
-### Goals <a name="goals"></a>
-
+## Goals <a name="goals"></a>
 While most features of my game do work, I do still find myself unsatisified by some features that I was not able to implement earlier. These goals include:
 * Implementing proper art assets into my game 
 * Expanding the game and adding more content. During development, I was quite slow and was not able to implement many of the features I wished to add. Features that could have been included would be things such as more varied enemies for the player to evade/attack, creative obstacles that would require players to take advantage and experiment with the mechanics, and score that would carry over to other levels, making collecting coins actually worth something valuable.
@@ -60,7 +59,7 @@ While most features of my game do work, I do still find myself unsatisified by s
   - Patrol an area or fly in an area or
   - Stand still, which can be seen more prominently with the red square 'enemy' at the beginning of the game. 
 
-### Successful Mechanics 
+## Abnormalities
 ![Movement script.](MovementScript.PNG)
 Image of the movement mechanics in the game. 
 
@@ -72,8 +71,9 @@ Throughout my project, I ran into a variety of issues that would provide a chall
 * Implementing sprites - I had to completely avoid using some of my assets provided as animation sprites for the same character were of different sizes, showing the full sprite sheet png when the animation would show.
 * Creating scripts - I had to learn how to create scripts while making scripts, slowing down the progress of my work.
 * Wallhopping. Players can gain extra height by wallhopping off a wall, which is a minor oversight that shouldn't pose too much of an issue.
-* Getting sprites in the first place. Due to issues, it was a little difficult for us to get sprites. '
-* Story implementation, as the game does not have any dialogue or intro that show what story events occur. 
+* Getting sprites in the first place. Due to issues, it was a little difficult for us to get sprites. 
+* Story implementation, as the game does not have any dialogue or intro that show what story events occur.
+* Speed of development, as it was the main factor to unfinished goals and features. In fact, most of my time was dedicated to learning C# and watching tutorials.
 
 
 ## Assets
@@ -88,7 +88,18 @@ Throughout my project, I ran into a variety of issues that would provide a chall
 
 <img width="128" height="448" alt="hero_attack_" src="https://github.com/user-attachments/assets/29e84162-0a15-401d-914b-7ddfb64299f4" />
 
+## Link to scripts
+- [Player Movement](#controls)
 
+- [Player Combat](#features) 
+
+- [Main Menu](#goals)
+
+- [Enemy Projectiles](#dev)
+
+- [Enemy Projectile Prefab](#issues)
+
+- [Main Menu](#credits)
 
 ## Version History
 
