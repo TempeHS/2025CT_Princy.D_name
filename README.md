@@ -99,7 +99,7 @@ Throughout my project, I ran into a variety of issues that would provide a chall
 
 - [Enemy Projectile Prefab](#issues)
 
-- [Main Menu](#credits)
+- [Main Menu](Assets/Scripts/MainMenu.cs)
 
 - [Timer]
 
