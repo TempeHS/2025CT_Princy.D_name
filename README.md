@@ -43,7 +43,7 @@ With my multimedia student, we came up with a basis for a story where the main c
 - [Attacking](https://www.youtube.com/watch?v=sPiVz1k-fEs)
 - [Collectables,](https://learn.unity.com/course/roll-a-ball/tutorial/detecting-collisions-with-collectibles-1?version=6.0) which tally up a score.
 - A [timer](https://www.youtube.com/watch?v=POq1i8FyRyQ) that encourages players to beat the game as fast as possible.
-- [Ranged Enemies](https://www.youtube.com/watch?v=--u20SaCCow&pp=0gcJCQYKAYcqIYzv]
+- [Ranged Enemies](https://www.youtube.com/watch?v=--u20SaCCow&pp=0gcJCQYKAYcqIYzv)
   
 ## Developer Documentation <a name="dev"></a>
 ![Screenshot of my code, showcasing the combat mechanics of this game.](CombatCode.PNG)
@@ -89,19 +89,17 @@ Throughout my project, I ran into a variety of issues that would provide a chall
 <img width="128" height="448" alt="hero_attack_" src="https://github.com/user-attachments/assets/29e84162-0a15-401d-914b-7ddfb64299f4" />
 
 ## Link to scripts
-- [Player Movement](#controls)
+- [Player Movement](#Assets/Scripts/PlayerMovement.cs)
 
-- [Player Combat](#features) 
+- [Player Combat](Assets/Scripts/PlayerCombat.cs) 
 
-- [Main Menu](#goals)
+- [Enemy Projectiles](Assets/Scripts/EnemyProjectile.cs)
 
-- [Enemy Projectiles](#dev)
-
-- [Enemy Projectile Prefab](#issues)
+- [Enemy Projectile Prefab](Assets/Scripts/EnemyProjectilePrefabScript.cs)
 
 - [Main Menu](Assets/Scripts/MainMenu.cs)
 
-- [Timer]
+- [Timer](Assets/Scripts/Timing.cs)
 
 ## Version History
 
