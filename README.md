@@ -2,17 +2,18 @@
 The Odyssey is a combat platformer encouraging emphasis on speed and collection. The game focuses on getting from one goal to another, while collecting coins along the way to spend on future levels. While on this adventure, or odyssey, the player will encounter enemies that try to stop them, or dangerous obstacles. 
 ![A screenshot from the game.](GameScreenshot.png)
 A screenshot showing gameplay.
-## About
+## :pencil: About
 
 <img width="309" height="224" alt="image" src="https://github.com/user-attachments/assets/a3b5c439-adca-4f51-ae33-810ed5bcb50f" />
 
 An image showing brief combat.
 
-The Odyssey as mentioned before is a game focused on speed and precision, requiring the player to platform through levels and fight enemies off. 
+The Odyssey as mentioned before is a game focused on speed and precision, requiring the player to platform through levels and fight enemies off. This game was made in about 3 months, and was done as for an assignment in my class. '
+> [!TIP]
+> Wall-hopping can be used as an exploit to raise your elevation.
 
 
-
-### Story
+### :book: Story
 With my multimedia student, we came up with a basis for a story where the main character would live in a dystopian landscape where megacorporations take control of the Earth's resources, governing the world and taking the people's will for themselves. The main character is a female mercenary working to liberate the world from the corporation's gripping on the continents. The game title, 'The Odyssey' is inspired off the novel of the same name, and is given this name to simulate the same large and grand adventure that Odysseus had in the novel.
 ## Table of Contents <a name="my-custom-anchor-point"></a>
 - [Controls](#controls)
@@ -42,13 +43,13 @@ With my multimedia student, we came up with a basis for a story where the main c
 - Collectables, which tally up a score.
 - A timer that encourages players to beat the game as fast as possible.
 - Movement system which rewards when players take advantage of it.
-
+  
 ## Developer Documentation <a name="dev"></a>
 ![Screenshot of my code, showcasing the combat mechanics of this game.](CombatCode.PNG)
 Image of the combat mechanics of my game. Used from this [tutorial created by Brackeys,](https://www.youtube.com/watch?v=sPiVz1k-fEs) or look at the features and click on the hyperlink for attacking.
 
 
-### :dart: Goals <a name="goals"></a>
+### Goals <a name="goals"></a>
 
 While most features of my game do work, I do still find myself unsatisified by some features that I was not able to implement earlier. These goals include:
 * Implementing proper art assets into my game 
@@ -63,14 +64,15 @@ While most features of my game do work, I do still find myself unsatisified by s
 Image of the movement mechanics in the game. 
 
 
-### :red_circle: Major/Minor issues during Development <a name="issues"></a>
+### Major/Minor issues during Development <a name="issues"></a>
 
 Throughout my project, I ran into a variety of issues that would provide a challenge to me. While most of these issues are fairly minor, there are a few outliers that may need further evaluation at a later time. These issues include:
 * Flying enemies - While the enemy would use the prefab provided, it would later erase itself and not be able to generate another projectile, which gave me a wide plethora of console issues.
 * Implementing sprites - I had to completely avoid using some of my assets provided as animation sprites for the same character were of different sizes, showing the full sprite sheet png when the animation would show.
 * Creating scripts - I had to learn how to create scripts while making scripts, slowing down the progress of my work.
 * Wallhopping. Players can gain extra height by wallhopping off a wall, which is a minor oversight that shouldn't pose too much of an issue.
-* Getting sprites in the first place. Due to issues, it was a little difficult for us to get sprites. 
+* Getting sprites in the first place. Due to issues, it was a little difficult for us to get sprites. '
+* Story implementation, as the game does not have any dialogue or intro that show what story events occur. 
 
 
 ## Assets
@@ -97,7 +99,7 @@ Throughout my project, I ran into a variety of issues that would provide a chall
 
 ### License
 
-This project is licensed under the [GPL-3.0] License - see the LICENSE.md file for details.
+This project is licensed under the [GPL-3.0](LICENSE) License - see the LICENSE.md file for details.
 
 ## Acknowledgments <a name="credits"></a>
 
