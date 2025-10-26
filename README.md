@@ -37,13 +37,13 @@ With my multimedia student, we came up with a basis for a story where the main c
 | A | Move Left |
 | D | Move Right |
 ## :white_check_mark: Features and Working Mechanics <a name="features"></a>
-- Dashing, which is a central mechanic of the game and gives the player an option to flee the enemies instead of fighting
+- [Dashing,](https://www.youtube.com/watch?v=2kFGmuPHiA0) which is a central mechanic of the game and gives the player an option to flee the enemies instead of fighting
 - [Jumping](https://www.youtube.com/watch?v=K1xZ-rycYY8), which is another central mechanic for platforming.
 - [Wall Sliding & Wall Hopping](https://www.youtube.com/watch?v=O6VX6Ro7EtA)
 - [Attacking](https://www.youtube.com/watch?v=sPiVz1k-fEs)
-- Collectables, which tally up a score.
-- A timer that encourages players to beat the game as fast as possible.
-- Movement system which rewards when players take advantage of it.
+- [Collectables,](https://learn.unity.com/course/roll-a-ball/tutorial/detecting-collisions-with-collectibles-1?version=6.0) which tally up a score.
+- A [timer](https://www.youtube.com/watch?v=POq1i8FyRyQ) that encourages players to beat the game as fast as possible.
+- [Ranged Enemies](https://www.youtube.com/watch?v=--u20SaCCow&pp=0gcJCQYKAYcqIYzv]
   
 ## Developer Documentation <a name="dev"></a>
 ![Screenshot of my code, showcasing the combat mechanics of this game.](CombatCode.PNG)
@@ -100,6 +100,8 @@ Throughout my project, I ran into a variety of issues that would provide a chall
 - [Enemy Projectile Prefab](#issues)
 
 - [Main Menu](#credits)
+
+- [Timer]
 
 ## Version History
 
