@@ -89,7 +89,7 @@ Throughout my project, I ran into a variety of issues that would provide a chall
 <img width="128" height="448" alt="hero_attack_" src="https://github.com/user-attachments/assets/29e84162-0a15-401d-914b-7ddfb64299f4" />
 
 ## Link to scripts
-- [Player Movement](#Assets/Scripts/PlayerMovement.cs)
+- [Player Controller](#Assets/Scripts/PlayerController.cs)
 
 - [Player Combat](Assets/Scripts/PlayerCombat.cs) 
 
