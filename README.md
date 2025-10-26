@@ -12,7 +12,8 @@ The Odyssey as mentioned before is a game focused on speed and precision, requir
 > [!TIP]
 > Wall-hopping can be used as an exploit to raise your elevation.
 
-
+### Objective 
+As mentioned before, the main objective of the game is to get to the goal at the end of the game while avoiding enemies and collecting obstacles.
 ### :book: Story
 With my multimedia student, we came up with a basis for a story where the main character would live in a dystopian landscape where megacorporations take control of the Earth's resources, governing the world and taking the people's will for themselves. The main character is a female mercenary working to liberate the world from the corporation's gripping on the continents. The game title, 'The Odyssey' is inspired off the novel of the same name, and is given this name to simulate the same large and grand adventure that Odysseus had in the novel.
 ## Table of Contents <a name="my-custom-anchor-point"></a>
