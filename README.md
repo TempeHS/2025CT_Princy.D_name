@@ -83,10 +83,20 @@ Throughout my project, I ran into a variety of issues that would provide a chall
 
 <img width="96" height="96" alt="coin" src="https://github.com/user-attachments/assets/daadb13c-57e6-4cb2-ad79-15dac496a322" />
 
-
-
-
 <img width="128" height="448" alt="hero_attack_" src="https://github.com/user-attachments/assets/29e84162-0a15-401d-914b-7ddfb64299f4" />
+
+## Mechanics in the game
+
+### :hearts: Health System and Death 
+<img width="525" height="115" alt="image" src="https://github.com/user-attachments/assets/c1089530-6fe6-47b9-9153-2ddd7283b76f" />
+
+A section of the code showing the death system.
+
+
+
+The health system in this game is quite simplistic. First, a few variables are declared, setting the initial values for the player. Those variables are then linked to a UI object ingame which would display the player's current health. When the player starts the game, a line set in the void start would set the current health to the maximum health. The next line after that would set the health bar's value to the max health of the player. If a player takes damage from an external source, the game would then take the value from the damage variable of the enemy, and minus the health value by the damage. After that, the script would then set the health bar's value to the player's current health. When a player dies, the player game object is destroyed, timescale is set to zero and a UI element known as 'GameOver' would be set to true. allowng the player to restart the game. 
+
+
 
 ## Link to scripts
 - [Player Controller](Assets/Scripts/PlayerController.cs)
