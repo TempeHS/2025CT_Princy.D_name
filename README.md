@@ -87,8 +87,11 @@ Throughout my project, I ran into a variety of issues that would provide a chall
 
 ## Mechanics in the game 
 
-### Dash Mechanic ![Dash script](
+### Dash Mechanic
 
+![Dash script](DashingScript.png)
+
+This images shows the dash function in my script. It is set in a IEnumerator to set off a sequence of events when the shift key is pressed. As soon as the shift key is pressed, isDashing is set to true allowing the player to dash and canDash is set to false to prevent the player from dashing during the actual event. The gravity scale is set to 0 to allow for smooth movement along a line. Next, a Vector2 is used which multiplies the transform value by the dashing power (7f). The player dashes forwards and emits a trail while playing the dash audio set.
 ### :hearts: Health System and Death 
 <img width="525" height="115" alt="image" src="https://github.com/user-attachments/assets/c1089530-6fe6-47b9-9153-2ddd7283b76f" />
 
