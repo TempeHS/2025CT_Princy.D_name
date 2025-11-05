@@ -72,7 +72,7 @@ Throughout my project, I ran into a variety of issues that would provide a chall
 * Creating scripts - I had to learn how to create scripts while learning C#, slowing down the progress of my work.
 * Wallhopping. Players can gain extra height by wallhopping off a wall, which is a minor oversight that shouldn't pose too much of an issue.
 * Getting sprites in the first place. Due to issues, it was a little difficult for us to get sprites. Later in time, I plan to implement free stock images which shall boost the appeal and appearance of my game. 
-* Story implementation, as the game does not have any dialogue or intro that show what story events occur. Once the game's initial issues are fixed, I
+* Story implementation, as the game does not have any dialogue or intro that show what story events occur. Once the game's initial issues are fixed, I will start to add these features. 
 * Speed of development, as it was the main factor to unfinished goals and features. In fact, most of my time was dedicated to learning C# and watching tutorials.
 
 
@@ -91,7 +91,9 @@ Throughout my project, I ran into a variety of issues that would provide a chall
 
 ![Dash script](DashingScript.png)
 
-This images shows the dash function in my script. It is set in a IEnumerator to set off a sequence of events when the shift key is pressed. As soon as the shift key is pressed, isDashing is set to true allowing the player to dash and canDash is set to false to prevent the player from dashing during the actual event. The gravity scale is set to 0 to allow for smooth movement along a line. Next, a Vector2 is used which multiplies the transform value by the dashing power (7f). The player dashes forwards and emits a trail while playing the dash audio set. After, the system waits for a set amount of time called the dashingTime (0.2f). Finally, the system sets emitting to false, sets the gravity scale back to normal and sets isDashing to false. The system then waits for the dashingCooldown (1f) to expend, then sets canDash to true.
+This images shows the dash function in my script. It is set in a IEnumerator to set off a sequence of events when the shift key is pressed. As soon as the shift key is pressed, isDashing is set to true allowing the player to dash and canDash is set to false to prevent the player from dashing during the actual event. The gravity scale is set to 0 to allow for smooth movement along a line. Next, a Vector2 is used which multiplies the transform value by the dashing power (7f).
+
+The player dashes forwards and emits a trail while playing the dash audio set. After, the system waits for a set amount of time called the dashingTime (0.2f). Finally, the system sets emitting to false, sets the gravity scale back to normal and sets isDashing to false. The system then waits for the dashingCooldown (1f) to expend, then sets canDash to true.
 
 ### :hearts: Health System and Death 
 <img width="525" height="115" alt="image" src="https://github.com/user-attachments/assets/c1089530-6fe6-47b9-9153-2ddd7283b76f" />
