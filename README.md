@@ -85,7 +85,9 @@ Throughout my project, I ran into a variety of issues that would provide a chall
 
 <img width="128" height="448" alt="hero_attack_" src="https://github.com/user-attachments/assets/29e84162-0a15-401d-914b-7ddfb64299f4" />
 
-## Mechanics in the game
+## Mechanics in the game 
+
+### Dash Mechanic ![Dash script](
 
 ### :hearts: Health System and Death 
 <img width="525" height="115" alt="image" src="https://github.com/user-attachments/assets/c1089530-6fe6-47b9-9153-2ddd7283b76f" />
