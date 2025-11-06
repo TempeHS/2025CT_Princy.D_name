@@ -76,14 +76,15 @@ Image of the movement mechanics in the game.
 
 ### Major/Minor issues during Development <a name="issues"></a>
 
-Throughout my project, I ran into a variety of issues that would provide a challenge to me. While most of these issues are fairly minor, there are a few outliers that may need further evaluation at a later time. These issues include:
-* Flying enemies - They are a large issue in development. Although they work temporarily, the projectile used would later delete itself and not be able to fire any additional projectiles instead providing a plethora of errors that clog the console up. The error likely comes from an error from what the enemy uses to shoot, which is a temporary object in the scene. For an unknown reason to me, a prefab would not work for this enemy. It would be an ideal outcome if I were to deduce a method to fix this conundrum. 
+While I did learn a lot of C# during my time on this project, I ran into a variety of issues that would provide a challenge to me, and some errors which have not been fixed. While most of these issues are fairly minor, there are a few outliers that may need further evaluation at a later time. These issues include:
+* Flying enemies - They are a large issue in development. Although they work temporarily, the projectile used would later delete itself and not be able to fire any additional projectiles instead providing a plethora of errors that clog the console up. The error likely comes from an error from what the enemy uses to shoot, which is a temporary object in the scene. For an unknown reason to me, a prefab would not work for this enemy. It would be an ideal outcome if I were to deduce a method to fix this conundrum. Ranged enemies also appear to not do damage to the player. Presently, it is unknown whether this comes from the health orb adding excess health which would not show up on the asset, or if a logic error is present, preventing the player from taking damage.  
 * Implementing sprites - I had to completely avoid using some of my assets provided as animation sprites for the same character were of different sizes, showing the full sprite sheet png when the animation would show.
 * Creating scripts - I had to learn how to create scripts while learning C#, slowing down the progress of my work.
 * Wallhopping. Players can gain extra height by wallhopping off a wall, which is a minor oversight that shouldn't pose too much of an issue.
 * Getting sprites in the first place. Due to issues, it was a little difficult for us to get sprites. Later in time, I plan to implement free stock images which shall boost the appeal and appearance of my game. 
 * Story implementation, as the game does not have any dialogue or intro that show what story events occur. Once the game's initial issues are fixed, I will start to add these features. 
 * Speed of development, as it was the main factor to unfinished goals and features. In fact, most of my time was dedicated to learning C# and watching tutorials.
+* Console errors are frequent while playing the game. Although they should not tamper with the game, they are a nuisance.
 
 
 ## Assets
@@ -105,6 +106,8 @@ This images shows the dash function in my script. It is set in a IEnumerator to 
 
 The player dashes forwards and emits a trail while playing the dash audio set. After, the system waits for a set amount of time called the dashingTime (0.2f). Finally, the system sets emitting to false, sets the gravity scale back to normal and sets isDashing to false. The system then waits for the dashingCooldown (1f) to expend, then sets canDash to true.
 
+I wanted to implement the dash mechanic to create a more varied experience, and give the player a movement option during portions of the level where there is not much going on. This feature is also intended for me to build the game around, and create unique situations. Later, I could make it so the dash mechanic is another way for the player to fight, with the player dashing into enemies and bouncing off them.
+
 ### :hearts: Health System and Death 
 <img width="525" height="115" alt="image" src="https://github.com/user-attachments/assets/c1089530-6fe6-47b9-9153-2ddd7283b76f" />
 
@@ -114,7 +117,9 @@ A section of the code showing the death system.
 
 The health system in this game is quite simplistic. First, a few variables are declared, setting the initial values for the player. Those variables are then linked to a UI object ingame which would display the player's current health. When the player starts the game, a line set in the void start would set the current health to the maximum health. The next line after that would set the health bar's value to the max health of the player.
 
-If a player takes damage from an external source, the game would then take the value from the damage variable of the enemy, and minus the health value by the damage. After that, the script would then set the health bar's value to the player's current health. When a player dies, the player game object is destroyed, timescale is set to zero and a UI element known as 'GameOver' would be set to true. allowng the player to restart the game. 
+If a player takes damage from an external source, the game would then take the value from the damage variable of the enemy, and minus the health value by the damage. After that, the script would then set the health bar's value to the player's current health. When a player dies, the player game object is destroyed, timescale is set to zero and a UI element known as 'GameOver' would be set to true. allowng the player to restart the game.
+
+The health system is here to add more pressure into the game, and give the player more incentive to play cautiously. A health orb is present early in the first level, but it cannot be used because of the player being unable to take damage before they can use it. The health system also appears to have some issues in game, as enemies can do damage to you without damage showing up on the health bar. This also may be happening because of the health orb around the ranged enemy adding an excess of hp, making it so the player appears to not take damage on the next hit. There also used to be an issue where stepping into a death zone (black pits) at an angle will not kill but rather negate some of that damage. I fixed this by increasing the damage number making it so the player will be killed regardless of how much HP they have. 
 
 
 
