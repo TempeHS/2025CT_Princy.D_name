@@ -148,21 +148,18 @@ The win screen was also a similar issue, as I vividly remember being frustrated 
 - [Timer](Assets/Scripts/Timing.cs)
 
 ## Version History
-Version History may be seen here.
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]() or see [branch]()
+Version History may be seen [here](https://github.com/TempeHS/2025CT_Princy.D_name/commits/main/).
 
 ### License
 
 This project is licensed under the [GPL-3.0](LICENSE) License - see the LICENSE.md file for details.
 
-## Crediting code used 
-## :white_check_mark: Features and Working Mechanics. Also functions as credits <a name="features"></a>
+## Code acknowledgements
 - [Dashing,](https://www.youtube.com/watch?v=2kFGmuPHiA0) 
 - [Jumping](https://www.youtube.com/watch?v=K1xZ-rycYY8)
 - [Wall Sliding & Wall Hopping.](https://www.youtube.com/watch?v=O6VX6Ro7EtA) 
 - [Attacking](https://www.youtube.com/watch?v=sPiVz1k-fEs)
-- [Collectables,](https://learn.unity.com/course/roll-a-ball/tutorial/detecting-collisions-with-collectibles-1?version=6.0) which tally up a score.
+- [Collectables,](https://learn.unity.com/course/roll-a-ball/tutorial/detecting-collisions-with-collectibles-1?version=6.0)
 - [Timer](https://www.youtube.com/watch?v=POq1i8FyRyQ) 
 - [Ranged Enemies.](https://www.youtube.com/watch?v=--u20SaCCow&pp=0gcJCQYKAYcqIYzv) 
 - [Game Over screen](https://www.youtube.com/watch?v=pKFtyaAPzYo)
