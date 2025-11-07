@@ -21,12 +21,14 @@ With my multimedia student, we came up with a basis for a story where the main c
 ## Table of Contents <a name="my-custom-anchor-point"></a>
 - [Controls](#controls)
 
-- [Features and Mechanics](#features) 
+- [Features](#features) 
 
 - [Goals](#goals)
 
 - [Developer Documentation](#dev)
 
+- [Notable Mechanics](#NM)
+  
 - [Issues](#issues)
 
 - [Acknowledgements](#credits)
@@ -99,7 +101,7 @@ While I did learn a lot of C# during my time on this project, I ran into a varie
 
 <img width="128" height="448" alt="hero_attack_" src="https://github.com/user-attachments/assets/29e84162-0a15-401d-914b-7ddfb64299f4" />
 
-## Mechanics in the game 
+## Mechanics in the game  <a name="NM"></a>
 
 ### Dash Mechanic
 
