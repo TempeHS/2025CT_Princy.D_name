@@ -14,6 +14,8 @@ public class EnemyPatrol : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         currentPoint = PointB.transform; // The current point is set as PointB.
     }
+    
+        // Testing scripts
 
     // Update is called once per frame
     void Update()

@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour
         currentHealth = 100; 
     }
 
+    // Testing scripts
+
     public void TakeDamage (int damage)
     {
         currentHealth -= damage;

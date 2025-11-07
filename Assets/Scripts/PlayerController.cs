@@ -129,7 +129,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
-            count = count + 1;
+            count = count + 3;
             SetCountText();
         }
         if (other.gameObject.CompareTag("Enemy"))
@@ -228,6 +228,7 @@ public class PlayerController : MonoBehaviour
             // Animator Script
         }
     }
+    // Commenting 
     private IEnumerator Dash()
     {
         canDash = false;

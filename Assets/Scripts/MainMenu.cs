@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(1);
     }
-
+// Testing scripts 
     public void RetryGame()
     {
         SceneManager.LoadSceneAsync(1);

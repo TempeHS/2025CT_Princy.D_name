@@ -7,7 +7,7 @@ public class ButtonAnimation : MonoBehaviour
     Animator anim;
     public GameObject Button;
 
-    void Start()
+    void Start() // Testing scripts
     {
         anim = gameObject.GetComponent<Animator>();
     }

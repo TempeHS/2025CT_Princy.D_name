@@ -9,7 +9,7 @@ public class PlayerCombat : MonoBehaviour
     public Transform attackPoint; // AP is Attack Point 
     public LayerMask enemyLayers; // LayerMasks are applied in order to define who the enemies are.
     public float attackRange = 0.5f;
-    public int AttackDamage = 40;
+    public int AttackDamage = 100000;
 
     public float AttackRate = 2f;
     float nextAttackTime = 0f;
@@ -36,10 +36,13 @@ public class PlayerCombat : MonoBehaviour
         }
     }
     
+    // Second script test
+    
+
     void OnDrawGizmosSelected()
     {
         if (attackPoint == null)
         return;
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange); // Draws a sphere in the editor around the AP and attack range? 
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange); // Draws a sphere in the editor around the AP and attack range.
     }
 }

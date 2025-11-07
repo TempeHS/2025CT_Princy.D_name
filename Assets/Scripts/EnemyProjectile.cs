@@ -14,6 +14,8 @@ public class EnemyProjectile : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
+        // Testing scripts
+
     // Update is called once per frame
     void Update()
     {

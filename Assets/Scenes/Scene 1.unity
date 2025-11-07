@@ -1226,7 +1226,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3733c4d341aad5b4db749859360e7f70, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2232,7 +2232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c5c91a64aa9edf4e9e32ea45cc11972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 4
+  damage: 90
   playerHealth: {fileID: 1862813185}
 --- !u!4 &854219735 stripped
 Transform:
@@ -3043,7 +3043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c5c91a64aa9edf4e9e32ea45cc11972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 4
+  damage: 70
   playerHealth: {fileID: 1862813185}
 --- !u!4 &1020728839 stripped
 Transform:
@@ -5513,7 +5513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c5c91a64aa9edf4e9e32ea45cc11972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 4
+  damage: 16
   playerHealth: {fileID: 1862813185}
 --- !u!4 &1707670060 stripped
 Transform:
