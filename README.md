@@ -1,4 +1,6 @@
 # The Odyssey 
+https://github.com/user-attachments/assets/bc50eb2a-85c2-4196-aafe-1347d7e2b91a 
+
 The Odyssey is a combat platformer encouraging emphasis on speed and collection. The game focuses on getting from one goal to another, while collecting coins along the way to spend on future levels. While on this adventure, or odyssey, the player will encounter enemies that try to stop them, or dangerous obstacles. 
 ![A screenshot from the game.](GameScreenshot.png)
 A screenshot showing gameplay.
