@@ -10,7 +10,7 @@ A screenshot showing gameplay.
 
 An image showing brief combat.
 
-The Odyssey as mentioned before is a game focused on speed and precision, requiring the player to platform through levels and fight enemies off. This game was made in about 3 months, and was done as for an assignment in my class. '
+The Odyssey as mentioned before is a game focused on speed and precision, requiring the player to platform through levels and fight enemies off. This game was made in about 3 months, and was done as for an assignment in my class.
 > [!TIP]
 > Wall-hopping can be used as an exploit to raise your elevation.
 
