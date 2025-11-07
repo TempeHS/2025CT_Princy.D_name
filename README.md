@@ -48,7 +48,6 @@ With my multimedia student, we came up with a basis for a story where the main c
 - [Collectables,](https://learn.unity.com/course/roll-a-ball/tutorial/detecting-collisions-with-collectibles-1?version=6.0) which tally up a score.
 - A [timer](https://www.youtube.com/watch?v=POq1i8FyRyQ) that encourages players to beat the game as fast as possible. The timer is also another way to artifically boost the difficult and enjoyment of the game, adding a layer of replayability to it. 
 - [Ranged Enemies.](https://www.youtube.com/watch?v=--u20SaCCow&pp=0gcJCQYKAYcqIYzv) Ranged enemies do function, but they have a major issue which will be addressed later in this document.
-- [Game Over screen](https://www.youtube.com/watch?v=pKFtyaAPzYo)
 
 ## To-Do List
 - [x] Basic Movement (For example jumping, moving, dashing) 
