@@ -76,7 +76,7 @@ Image of the movement mechanics in the game.
 
 ### Major/Minor issues during Development <a name="issues"></a>
 
-While I did learn a lot of C# during my time on this project, I ran into a variety of issues that would provide a challenge to me, and some errors which have not been fixed. While most of these issues are fairly minor, there are a few outliers that may need further evaluation at a later time. These issues include:
+While I did learn a lot of C# during my time on this project, I ran into a variety of issues that would provide a challenge to me, and some errors which have not been fixed. Although most of these issues are fairly minor, there are a few outliers that may need further evaluation at a later time. These issues include:
 * Flying enemies - They are a large issue in development. Although they work temporarily, the projectile used would later delete itself and not be able to fire any additional projectiles instead providing a plethora of errors that clog the console up. The error likely comes from an error from what the enemy uses to shoot, which is a temporary object in the scene. For an unknown reason to me, a prefab would not work for this enemy. It would be an ideal outcome if I were to deduce a method to fix this conundrum. Ranged enemies also appear to not do damage to the player. Presently, it is unknown whether this comes from the health orb adding excess health which would not show up on the asset, or if a logic error is present, preventing the player from taking damage.  
 * Implementing sprites - I had to completely avoid using some of my assets provided as animation sprites for the same character were of different sizes, showing the full sprite sheet png when the animation would show.
 * Creating scripts - I had to learn how to create scripts while learning C#, slowing down the progress of my work.
@@ -137,12 +137,9 @@ The health system is here to add more pressure into the game, and give the playe
 - [Timer](Assets/Scripts/Timing.cs)
 
 ## Version History
-
-* 0.2
+Version History may be seen here.
     * Various bug fixes and optimizations
     * See [commit change]() or See [release history]() or see [branch]()
-* 0.1
-    * Initial Release
 
 ### License
 
