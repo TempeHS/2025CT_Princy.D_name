@@ -124,6 +124,14 @@ If a player takes damage from an external source, the game would then take the v
 
 The health system is here to add more pressure into the game, and give the player more incentive to play cautiously. A health orb is present early in the first level, but it cannot be used because of the player being unable to take damage before they can use it. The health system also appears to have some issues in game, as enemies can do damage to you without damage showing up on the health bar. This also may be happening because of the health orb around the ranged enemy adding an excess of hp, making it so the player appears to not take damage on the next hit. There also used to be an issue where stepping into a death zone (black pits) at an angle will not kill but rather negate some of that damage. I fixed this by increasing the damage number making it so the player will be killed regardless of how much HP they have. 
 
+### Death Screen
+<img width="1442" height="761" alt="Game Over screen" src="https://github.com/user-attachments/assets/77bbf5fc-847e-49b4-8483-653526da82bf" />
+
+An image of the game over screen.
+
+The game over screen gave me a lot of issues during development. This can be especially seen when editing the game, as the UI overlay is permanently over most of the scene which slowed down my development. The main challenge likely came from not writing the code, but managing unity itself. I had to learn entirely new features such as the UI elements and manage scripts. The end product has the screen working.
+
+The win screen was also a similar issue, as I vividly remember being frustrated at the code not working. I then realised that a minor issue such as a type or overlook caused this issue. I fixed this, thus leading to the asset working. 
 
 
 ## Link to scripts
