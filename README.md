@@ -38,14 +38,15 @@ With my multimedia student, we came up with a basis for a story where the main c
 | W | Move Forward |
 | A | Move Left |
 | D | Move Right |
-## :white_check_mark: Features and Working Mechanics <a name="features"></a>
+## :white_check_mark: Features and Working Mechanics. Also functions as credits <a name="features"></a>
 - [Dashing,](https://www.youtube.com/watch?v=2kFGmuPHiA0) which is a central mechanic of the game and gives the player an option to flee the enemies instead of fighting. This is likely one of the most important features in this game, and will be the mechanic I build my levels around. 
 - [Jumping](https://www.youtube.com/watch?v=K1xZ-rycYY8), which is another central mechanic for platforming.
 - [Wall Sliding & Wall Hopping.](https://www.youtube.com/watch?v=O6VX6Ro7EtA) 
 - [Attacking](https://www.youtube.com/watch?v=sPiVz1k-fEs)
 - [Collectables,](https://learn.unity.com/course/roll-a-ball/tutorial/detecting-collisions-with-collectibles-1?version=6.0) which tally up a score.
 - A [timer](https://www.youtube.com/watch?v=POq1i8FyRyQ) that encourages players to beat the game as fast as possible. The timer is also another way to artifically boost the difficult and enjoyment of the game, adding a layer of replayability to it. 
-- [Ranged Enemies.](https://www.youtube.com/watch?v=--u20SaCCow&pp=0gcJCQYKAYcqIYzv) Ranged enemies do function, but they have a major issue which will be addressed later in this document. 
+- [Ranged Enemies.](https://www.youtube.com/watch?v=--u20SaCCow&pp=0gcJCQYKAYcqIYzv) Ranged enemies do function, but they have a major issue which will be addressed later in this document.
+- [Game Over screen](https://www.youtube.com/watch?v=pKFtyaAPzYo)
 
 ## To-Do List
 - [x] Basic Movement (For example jumping, moving, dashing) 
@@ -147,6 +148,22 @@ Version History may be seen here.
 
 This project is licensed under the [GPL-3.0](LICENSE) License - see the LICENSE.md file for details.
 
+## Crediting code used 
+## :white_check_mark: Features and Working Mechanics. Also functions as credits <a name="features"></a>
+- [Dashing,](https://www.youtube.com/watch?v=2kFGmuPHiA0) 
+- [Jumping](https://www.youtube.com/watch?v=K1xZ-rycYY8)
+- [Wall Sliding & Wall Hopping.](https://www.youtube.com/watch?v=O6VX6Ro7EtA) 
+- [Attacking](https://www.youtube.com/watch?v=sPiVz1k-fEs)
+- [Collectables,](https://learn.unity.com/course/roll-a-ball/tutorial/detecting-collisions-with-collectibles-1?version=6.0) which tally up a score.
+- [Timer](https://www.youtube.com/watch?v=POq1i8FyRyQ) 
+- [Ranged Enemies.](https://www.youtube.com/watch?v=--u20SaCCow&pp=0gcJCQYKAYcqIYzv) 
+- [Game Over screen](https://www.youtube.com/watch?v=pKFtyaAPzYo)
+- [Enemies doing damge](https://www.youtube.com/watch?v=KF3EVjOhN4c)
+- [Patrolling enemies](https://www.youtube.com/watch?v=RuvfOl8HhhM)
+- [Main Menu](https://www.youtube.com/watch?v=DX7HyN7oJjE)
+- [Movement](https://www.youtube.com/watch?v=K1xZ-rycYY8)
+- [Camera](https://www.youtube.com/watch?v=2jTY11Am0Ig)
+- [Win Screen](https://www.youtube.com/watch?v=PMINhgYQbS4)
 ## Acknowledgments <a name="credits"></a>
 
 Mainly code tutorials.
